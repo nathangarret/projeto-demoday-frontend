@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Criar Conta</title>
+</head>
+<body>
+
+    <header class='header_logo'>
+        <a href="#"><img src="assets/images/logo.png" alt="Logo aliança" /></a>
+    </header>
+    <div class='container'>
+        <form action="post">
+            <header class='title_forms'>
+                <h3>Seu Cadastro</h3>
+            </header>
+        <div class='row_form'>
+            <div class='form_dados'>
+
+                <div class='form_dados_line'>
+                <label class='form_dados_label01'>Nome
+                    <input class='input_name' type="text" required placeholder='Nome e sobrenome' name='nome_cliente' />
+                </label>
+                <label class='form_dados_label02'>Idade
+                    <input class='input_idade' type="text" required placeholder='Sua idade' name='idade_cliente'/>
+                </label>
+                </div>
+
+
+                <div class='form_dados_line'>
+                <label class='form_dados_label01'>Celular
+                    <input class='input_celular' type="tel" required placeholder='(xx) xxxxx-xxxx' name='celular_cliente'/>
+                </label>
+                <label class='form_dados_label02 '>Telefone
+                    <input class='input_telefone' type="tel" required placeholder='(xx) xxxxx-xxxx' name='telefone_cliente'/>
+                </label>
+                </div>
+
+
+                <div class='form_dados_line'>
+                <label class='form_dados_label01'>E-mail
+                    <input class='input_email' type="email" required placeholder='Exemplo.sac@xxxx.com' name='email_cliente'/>
+                </label>
+                <label class='form_dados_label02'>Sexo
+                    <input class='input_sexo' type="text" required placeholder='F, M ou outro' name='sexo_cliente'/>
+                </label>
+                </div>
+
+
+                <div class='form_dados_line'>
+                <label class='form_dados_label01'>Senha
+                    <input class='input_senha' type="password" required placeholder='Digite sua senha' name='senha_cliente'/>
+                </label>
+                <label class='form_dados_label02'>Confirmação Senha
+                    <input class='input_confirmacao' type="password" required placeholder='Digite novamente a senha ' name='confirmacao_senha'/>
+                </label>
+                </div>
+
+
+            </div>
+            <div class='form_termos'>
+                    <p class='title_termos'>Termos de uso</p>
+                    <textarea class='box_termos'></textarea>
+                    <input class='input_submit' type="submit" value="SALVAR"/>
+            </div>
+        </div>
+        
+
+        </form>
+    </div>
+    
+</body>
+</html>
