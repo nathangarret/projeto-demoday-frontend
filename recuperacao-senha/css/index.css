@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.white{
+    background-color: #fff;
+    width: 15vw;
+    height: 100vh;
+}
+
+.logo-reduzido{
+    width: 8.7rem;
+    height: 5rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3.8rem;
+}
+
+.image{
+    width: 100%;
+    height: 100vh;
+    border-radius: 1.7rem 0 0 1.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    width: 96.8rem;
+    height: 53.8rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin-left: -0.75%;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.textos h1{
+    font-size: 4.9rem;
+    font-weight: bolder;
+    color: #658955;
+    margin-bottom: 2rem;
+}
+
+.textos p{
+    width: 75%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #2C4757;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.box label{
+    font-family: 'Poppins', sans-serif;
+    color: #658955;
+    font-size: 1.85rem;
+    font-weight: 500;
+}
+
+.box input[type="text"]{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    width: 48.32rem;
+    height: 6.9rem;
+    border-radius: 2rem;
+    border: 1px solid #2C4757;
+    padding-left: 1.75rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.box button{
+    width: 25.4rem;
+    height: 6.7rem;
+    background-color: #658955;
+    color: #fff;
+    border-radius: 2rem;
+    border: none;
+}
+
+.box button:hover{
+  border: 2px solid #658955;
+  background-color: #fff;
+  color: #658955;
+  cursor: pointer;
+}
+
+.voltar p{
+    font-family: 'Poppins', sans-serif;
+    color: #658955;
+    font-size: 1.9rem;
+    margin-left: 5rem;
+}
+
+.voltar p:hover{
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+}
+
+/* Extra Small Devices */
+@media (min-width: 481px) and (max-width: 767px){
+
+}
+
+/* Extra Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    
+}
+
+/* Extra Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px){
+    
+}
+
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1919px){
+    
+}
+
+/* Extra Large screens */
+@media (min-width: 1920px){
+    
+}
