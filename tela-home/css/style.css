@@ -1,0 +1,208 @@
+main {
+    height: 100vh;
+    background: url(../img/fundo-home.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* HEADER OU CABEÇARIO */
+
+
+/* SECTION HOME */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.home p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 7.5rem;
+}
+
+.home .logo-laçoos {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 10rem;
+}
+
+.home .logo-rede-social {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 3rem;
+    bottom: 0;
+}
+
+.home .logo-rede-social .rede-social {
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+    font-size: 8rem;
+}
+
+.home .rede-social .link-rede-social{
+    color: #fff;
+}
+
+/* SECTION CAMINHO PLANEJAMENTO */
+
+.caminho-planejamento {
+    margin: 20rem 0rem;
+}
+
+.caminho-planejamento .caixa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0rem 25rem;
+}
+
+.caminho-planejamento .caixa .grupo-bolinhas{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bolinha-dourada {
+    border-radius: 50%;
+    background-color: #C3B107;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.caixa-textos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0rem 15rem;
+}
+
+.caixa-textos h2 {
+    margin: 3rem 0rem;
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    color: #658955;
+}
+
+.caixa-textos .h2-link {
+    color: #658955;
+}
+
+.caixa-textos p {
+    display: flex;
+    align-items: flex-start;
+    width: 32rem;
+    height: 26.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+/* SECTION MODELOS CONVITES */
+.modelos-convites {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modelos-convites .modelo-de-convite {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.modelos-convites .modelo-de-convite .grupo-bolinhas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modelos-convites .modelo-de-convite .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #658955;
+    font-family: 'Dancing Script', cursive;
+    font-size: 9rem;
+}
+
+.convites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    margin-bottom: 4rem;
+}
+
+.lista-convites {
+    position: relative;
+    width: 50rem;
+    height: 60rem;
+    background-color: aqua;
+}
+
+.lista-convites .imagem {
+    width: 50rem;
+}
+
+.btn-seta {
+    background-color: #658955;
+    color: #C3B107;
+    font-size: 3rem;
+    border-radius: 50%;
+    border: 0;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    transition: backgrond-color, 0.2s ease-in-out;
+    box-shadow: 0px 7px 29px 0px #64646f33;
+}
+
+.btn-seta:hover {
+    background-color: #C3B107;
+    color: #fff;
+}
+
+.cartao {
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    box-shadow: 0px 7px 29px 0px #64646f33;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.hashiLacoos {
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+}
