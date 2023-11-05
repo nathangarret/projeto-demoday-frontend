@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    background-color: #0000003f;   
+}
+
+.caixa .conteudo-caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container .titulo-pricipal {
+    color: #658955;
+    font-size: 4rem;
+    padding: .5rem 2rem;
+    transition: all .2s ease-in-out;
+}
+
+.container .titulo-pricipal:hover {
+    color: #fff;
+    background-color: #658955;
+    cursor: pointer;
+    border-radius: 4rem;
+}
+
+.modo-daltonismo-caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #658955;
+    width: 90rem;
+    height: 50rem;
+    border-radius: 3.6rem;
+    position: relative;
+}
+
+.aparecer {
+    visibility: visible;
+}
+
+.modo-daltonismo-caixa .btn-voltar {
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    font-weight: 600;
+    color: #C3B107;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+
+.modo-daltonismo-caixa .btn-voltar:hover {
+    text-decoration: underline;
+}
+
+.modo-daltonismo-caixa .escolhas-modo-daltonismo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modo-daltonismo-caixa .escolhas-modo-daltonismo .titulo-escolha {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 6.3rem;
+}
+
+.modo-daltonismo-caixa .escolhas-modo-daltonismo .tipos-daltonismo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4.3rem;
+    width: 75rem;
+}
+
+.tipos-daltonismo .cores-alternador {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.tipos-daltonismo .tipo-daltonismo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 33.9rem;
+    color: #fff;
+}
+
+input[type="radio"] {
+    appearance: none;
+    position: relative;
+    width: 6rem;
+    height: 3.3rem;
+    border-radius: 5rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    background-color: #646363;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: .4rem;
+    left: .4rem;
+    transition: .3s;
+}
+
+input[type="radio"]:checked::before {
+    left: 3.1rem;
+}
+
+.tipos-daltonismo .tipo-daltonismo .alternador {
+    position: relative;
+    width: 6rem;
+    height: 3.3rem;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.tipos-daltonismo .tipo-daltonismo .alternador .bola-alternador {
+    position: absolute;
+    background-color: #646363;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: .4rem;
+    right: .4rem;
+}
