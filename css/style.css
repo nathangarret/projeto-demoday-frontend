@@ -50,7 +50,10 @@ main {
     display: flex;
     gap: 2rem;
     color: #fff;
-    font-size: 8rem;
+}
+
+.home .logo-rede-social .rede-social a svg {
+    font-size: 7rem;
 }
 
 .home .rede-social .link-rede-social{
@@ -170,7 +173,6 @@ main {
 .btn-seta {
     background-color: #658955;
     color: #C3B107;
-    font-size: 3rem;
     border-radius: 50%;
     border: 0;
     width: 7rem;
@@ -183,6 +185,10 @@ main {
 .btn-seta:hover {
     background-color: #C3B107;
     color: #fff;
+}
+
+.btn-seta svg {
+    font-size: 2.5rem
 }
 
 .cartao {
@@ -205,4 +211,16 @@ main {
     position: absolute;
     bottom: 4rem;
     right: 2rem;
+}
+
+@media(max-width: 1500px){
+    .modelos-convites .modelo-de-convite .titulo {
+        font-size: 7rem;
+    }
+}
+
+@media(max-width: 1201px){
+    .modelos-convites .modelo-de-convite .titulo {
+        font-size: 5.5rem;
+    }
 }
