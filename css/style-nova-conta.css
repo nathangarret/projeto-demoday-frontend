@@ -1,10 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-  
   body{
     background-image: url('../../img/backgroun.jpg');
     background-size: cover; 
@@ -28,17 +22,16 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 90vh;
 }
 
 form{
     display: flex;
-    padding: 60px;
+    padding: 30px;
     background-color: #fff;
     width: 90%;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .row_form{
@@ -78,7 +71,7 @@ form{
 input{
     display: block;
     margin-top: 5px;
-    padding: 20px 15px;
+    padding: 15px 10px;
     border-radius:10px;
     border: 1px solid #2C4757;
     outline: 0;
@@ -92,7 +85,7 @@ input{
     margin-top: 25px;
     font-family: 'Poppins', sans-serif;
     color: #658955;
-    font-size: 1.2rem;
+    font-size: 2rem;
     
 }
 
@@ -105,7 +98,7 @@ input{
     font-family: 'Poppins', sans-serif;
     color: #658955;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 
@@ -183,7 +176,7 @@ input{
     margin-bottom: 5px;
     font-family: 'Poppins', sans-serif;
     color: #658955;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .box_termos{
@@ -198,15 +191,54 @@ input{
     padding: 15px;
 }
 
-.btn-voltar {
-    position: absolute;
-    background-color: #658955;
-    border-radius: 2rem;
-    top: 3rem;
-    right: 3rem;
-    color: #fff;
-    font-size: 25px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 15px;
+@media(max-width:1500px){
+    .container {
+        height: none;
+    }
+
+    .form_dados_label01{
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 2rem;
+        
+    }
+    
+    .form_dados_label02{
+        margin-bottom: 15px;
+        margin-top: 15px;
+        position: relative;
+        font-size: 2rem;
+    }
+
+    .title_termos{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        color: #658955;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:1200px){
+    .form_dados_label01{
+        margin-bottom: 7px;
+        margin-top: 7px;
+        font-size: 2rem;
+        
+    }
+    
+    .form_dados_label02{
+        margin-bottom: 7px;
+        margin-top: 7px;
+        position: relative;
+        font-size: 2rem;
+    }
+
+    .title_termos{
+        margin-top: 7px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        color: #658955;
+        font-size: 2rem;
+    }
 }
