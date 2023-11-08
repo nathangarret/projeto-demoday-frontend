@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon" />
+
+    <title>Tela de Pagamento</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style-pagamento.css">
+</head>
+<body class="container-tela-pagamento">
+    <a href="#">
+        <img src="../img/img-pagamento/logo-reduzida.svg" alt="">
+    </a>
+    <div class="container-pagamento">
+        <h2 class="titulo-pagamento">PAGAMENTO</h2>
+        <form action="" method="post" class="form-pagamento">
+            <div class="nome-titular">
+                <label for="nome">Nome do titular</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome como exibido no cartão">
+            </div>
+            <div class="validade-cvv-dataNascimento">
+                <div class="container-inputs">
+                    <label for="validade">Validade</label>
+                    <input type="datetime" name="validade" id="validade" placeholder="MM/AA">
+                </div>
+                <div class="container-inputs">
+                    <label for="cvv">CVV</label>
+                    <input type="number" name="cvv" id="cvv" placeholder="CVV">
+                </div>
+                <div class="container-inputs">
+                    <label for="dataNascimento">Data de nascimento (dono do cartão)</label>
+                    <input type="datetime" name="dataNascimento" id="dataNascimento" placeholder="DD/MM/AA">
+                </div>
+            </div>
+            <div class="numeroCartao">
+                <label for="numeroCartao">Número do Cartão</label>
+                <input type="number" name="numeroCartao" id="numeroCartao" placeholder="xxxx.xxxx.xxxx.xxxx">
+            </div>
+            <div class="cpf-telefone">
+                <div class="container-inputs">
+                    <label for="cpf">CPF (dono do cartão)</label>
+                    <input type="number" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
+                </div>
+                <div class="container-inputs">
+                    <label for="telefone">Telefone (dono do cartão)</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxx-xxxx">
+                </div>
+            </div>
+            <div class=" finalizar">
+                <p class="valorFinal">Total: R$2.700,00</p>
+                <button class="btn-finalizar-pagamento" type="submit">Finalizar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
