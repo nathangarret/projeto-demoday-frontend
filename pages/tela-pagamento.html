@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="../css/style-pagamento.css">
 </head>
 <body class="container-tela-pagamento">
-    <a href="#">
+    <a class="sumir" href="../index.html">
         <img src="../img/img-pagamento/logo-reduzida.svg" alt="">
     </a>
     <div class="container-pagamento">
-        <h2 class="titulo-pagamento">PAGAMENTO</h2>
+        <div class="header-pagamento">
+            <h2 class="titulo-pagamento">PAGAMENTO</h2>
+            <a href="../index.html">
+                <img src="../img/img-pagamento/logo-reduzida.svg" alt="">
+            </a>
+        </div>
         <form action="" method="post" class="form-pagamento">
             <div class="nome-titular">
                 <label for="nome">Nome do titular</label>
@@ -32,7 +37,7 @@
                     <input type="number" name="cvv" id="cvv" placeholder="CVV">
                 </div>
                 <div class="container-inputs">
-                    <label for="dataNascimento">Data de nascimento (dono do cartão)</label>
+                    <label for="dataNascimento">Data de nascimento</label>
                     <input type="datetime" name="dataNascimento" id="dataNascimento" placeholder="DD/MM/AA">
                 </div>
             </div>

@@ -6,7 +6,8 @@
     position: relative;
 }
 
-.container-tela-pagamento a {
+.container-tela-pagamento .sumir {
+    visibility: visible;
     position: absolute;
     top: 3.8rem;
     left: 50%;
@@ -21,6 +22,10 @@
     padding: 5rem;
     border-radius: 1.7rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 20px;
+}
+
+.container-pagamento .header-pagamento a {
+    display: none;
 }
 
 .container-pagamento .form-pagamento {
@@ -73,6 +78,7 @@
     border-radius: 1.7rem;
     height: 4.5rem;
     padding: 2rem 2.4rem;
+    width: 100%;
 }
 
 .form-pagamento .numeroCartao {
@@ -126,4 +132,114 @@
     padding: 1.7rem 6.4rem;
     border: none;
     cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+    .container-tela-pagamento a {
+        top: 1.8rem;
+    }
+
+    .container-pagamento {
+        width: 700px;
+        padding: 2rem;
+        left: 4.6rem;
+        bottom: 2rem;
+    }
+
+    .container-pagamento .titulo-pagamento {
+        font-size: 3rem;
+    }
+
+    .form-pagamento .nome-titular label {
+        font-size: 1.5rem;
+        margin: 1.6rem 0 .8rem 0;
+    }
+
+    .form-pagamento .numeroCartao label,
+    .form-pagamento .validade-cvv-dataNascimento label,
+    .form-pagamento .cpf-telefone label {
+        font-size: 1.5rem;
+    }
+
+    .form-pagamento .validade-cvv-dataNascimento,
+    .form-pagamento .numeroCartao,
+    .form-pagamento .cpf-telefone{
+        margin-top: 1.5rem;
+    }
+
+    .form-pagamento .finalizar {
+        margin-top: 2rem;
+    }
+
+    .form-pagamento .finalizar .valorFinal {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .form-pagamento .finalizar .btn-finalizar-pagamento {
+        font-size: 2rem;
+        border-radius: 1.5rem;
+        padding: 1rem 4rem;
+    }
+}
+
+@media(max-width: 1500px) {
+    .container-tela-pagamento .sumir {
+        display: none;
+    }
+
+    .container-pagamento {
+        width: 800px;
+        padding: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container-pagamento .header-pagamento {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-pagamento .header-pagamento a {
+        position: unset;
+        transform: translateX(0%);
+        display: flex;
+    }    
+
+    .container-pagamento .titulo-pagamento {
+        font-size: 4rem;
+    }
+
+    .form-pagamento .nome-titular label {
+        font-size: 2rem;
+        margin: 1.6rem 0 .8rem 0;
+    }
+
+    .form-pagamento .numeroCartao label,
+    .form-pagamento .validade-cvv-dataNascimento label,
+    .form-pagamento .cpf-telefone label {
+        font-size: 2rem;
+    }
+
+    .form-pagamento .validade-cvv-dataNascimento,
+    .form-pagamento .numeroCartao,
+    .form-pagamento .cpf-telefone{
+        margin-top: 1.5rem;
+    }
+
+    .form-pagamento .finalizar {
+        margin-top: 2rem;
+    }
+
+    .form-pagamento .finalizar .valorFinal {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .form-pagamento .finalizar .btn-finalizar-pagamento {
+        font-size: 2rem;
+        border-radius: 1.5rem;
+        padding: 1rem 4rem;
+    }
 }
