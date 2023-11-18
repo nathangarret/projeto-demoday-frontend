@@ -18,7 +18,6 @@ body {
 
 .nav_logo,
 li {
-    font-family: 'Dancing Script', cursive;
     display: flex;
     align-items: center;
     list-style: none;
@@ -61,7 +60,6 @@ form {
 }
 
 .title_form {
-    font-family: 'Dancing Script', cursive;
     color: #658955;
     font-size: 3.5rem;
 }

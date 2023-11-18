@@ -1,6 +1,7 @@
 main {
     height: 100vh;
-    background: url(../img/fundo-home.jpg) no-repeat center;
+    width: 100%;
+    background: url(../img/home/fundo-home.jpg) no-repeat top center;
     background-size: cover;
 }
 
@@ -18,17 +19,6 @@ main {
     margin: 0 auto;
 }
 
-.home p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    color: #fff;
-    font-family: 'Dancing Script', cursive;
-    font-size: 7.5rem;
-}
-
 .home .logo-laçoos {
     position: absolute;
     top: 3rem;
@@ -36,11 +26,58 @@ main {
     width: 10rem;
 }
 
+.home .container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    gap: 2.6rem;
+    margin-left: 8.5rem;
+}
+
+.home .container-home .botao-home {
+    background-color: #C3B107;
+    padding: 1.7rem 3.5rem;
+    width: fit-content;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-radius: 4rem;
+    cursor: pointer;
+
+}
+
+.home .container-home .textos-central {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    padding: 3.8rem 0.9rem 0.9rem 3.8rem;
+    border-radius: 2.3rem;
+}
+
+.home .container-home .textos-central .titulo-principal,
+.home .container-home .textos-central .titulo-principal .css-titulo {
+    font-size: 7.5rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 90.2%;
+}
+
+.home .container-home .textos-central .titulo-principal .css-titulo {
+    color: #C3B107;
+}
+
+.home .container-home .textos-central p {
+    font-size: 2.7rem;
+    font-weight: 500;
+    line-height: 139.7%;
+    color: #fff;
+}
+
 .home .logo-rede-social {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     padding: 1rem 3rem;
     bottom: 0;
@@ -63,56 +100,53 @@ main {
 /* SECTION CAMINHO PLANEJAMENTO */
 
 .caminho-planejamento {
+    position: relative;
     margin: 20rem 0rem;
 }
 
-.caminho-planejamento .caixa {
+.caminho-planejamento .decoracao-cima {
+    position: absolute;
+    top: -20rem;
+    width: 1600px;
+}
+
+.caminho-planejamento .caixa-textos {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0rem 25rem;
+    flex-direction: column;
+    gap: 7.4rem;
 }
 
-.caminho-planejamento .caixa .grupo-bolinhas{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.bolinha-dourada {
-    border-radius: 50%;
-    background-color: #C3B107;
-    width: 1.7rem;
-    height: 1.7rem;
-}
-
-.caixa-textos {
+.caminho-planejamento .caixa-textos .texto {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    padding: 0rem 15rem;
+    justify-content: center;
+    gap: 5.4rem;
 }
 
-.caixa-textos h2 {
-    margin: 3rem 0rem;
-    font-size: 4rem;
-    font-family: 'Dancing Script', cursive;
+.caminho-planejamento .caixa-textos .texto .conteudo-home h2 {
+    font-size: 4.7rem;
     color: #658955;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
 }
 
-.caixa-textos .h2-link {
-    color: #658955;
+.caminho-planejamento .caixa-textos .texto .conteudo-home p {
+    font-size: 2.7rem;
+    font-weight: 500;
+    text-align: justify;
+    width: 56.8rem;
 }
 
-.caixa-textos p {
-    display: flex;
-    align-items: flex-start;
-    width: 32rem;
-    height: 26.1rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.9rem;
-    text-align: center;
+.caminho-planejamento .caixa-textos .texto .conteudo-home .btn-caminho-planejamento{
+    background-color: #658955;
+    color: #fff;
+    width: fit-content;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 5.4rem;
+    padding: 1.7rem 7.8rem;
+    border-radius: 4rem;
+    cursor: pointer;
 }
 
 /* SECTION MODELOS CONVITES */
@@ -125,30 +159,14 @@ main {
     justify-content: center;
 }
 
-.modelos-convites .modelo-de-convite {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-}
-
-.modelos-convites .modelo-de-convite .grupo-bolinhas {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.modelos-convites .modelo-de-convite .titulo {
+.modelos-convites .titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     color: #658955;
-    font-family: 'Dancing Script', cursive;
     font-size: 9rem;
+    height: 100%;
+    margin-bottom: 4rem;
 }
 
 .convites {
@@ -210,7 +228,7 @@ main {
 .hashiLacoos {
     position: absolute;
     bottom: 4rem;
-    right: 2rem;
+    left: 2rem;
 }
 
 @media(max-width: 1500px){

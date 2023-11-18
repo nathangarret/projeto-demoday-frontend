@@ -22,10 +22,66 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/modo-daltonismo.css" />
     <title>Laçoos</title>
   </head>
   <body>
     <main>
+      <div class="caixa">
+        <div class="conteudo-caixa">
+          <div class="modo-daltonismo-caixa">
+            <div class="btn-voltar">Voltar</div>
+            <div class="escolhas-modo-daltonismo">
+              <h2 class="titulo-escolha">Escolha o modo daltonismo</h2>
+              <div class="tipos-daltonismo">
+                <div class="tipo-daltonismo">
+                  <div class="nome-daltonismo">
+                    <p>Deuteranomalia</p>
+                    <p>Protanopia</p>
+                    <p>Deuteranopia</p>
+                    <p>Protanomalia</p>
+                  </div>
+                  <div class="cores-alternador">
+                    <img
+                      src="../img/Deuteranomalia-Protanopia-Deuteranopia-Protanomalia.svg"
+                      alt=""
+                    />
+                    <input type="radio" name="switch" id="switch" />
+                  </div>
+                </div>
+                <div class="tipo-daltonismo">
+                  <div class="nome-daltonismo">
+                    <p>Monocromacia</p>
+                  </div>
+                  <div class="cores-alternador">
+                    <img src="../img/Monocromacia.svg" alt="" />
+                    <input type="radio" name="switch" id="switch" />
+                  </div>
+                </div>
+                <div class="tipo-daltonismo">
+                  <div class="nome-daltonismo">
+                    <p>Tritanopia</p>
+                    <p>Tritanomalia</p>
+                  </div>
+                  <div class="cores-alternador">
+                    <img src="../img/Tritanopia-Tritanomalia.svg" alt="" />
+                    <input type="radio" name="switch" id="switch" />
+                  </div>
+                </div>
+                <div class="tipo-daltonismo">
+                  <div class="nome-daltonismo">
+                    <p>Acromatopsia</p>
+                  </div>
+                  <div class="cores-alternador">
+                    <img src="../img/Acromatopsia.svg" alt="" />
+                    <input type="radio" name="switch" id="switch" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="home">
         <nav class="navbar">
           <input type="checkbox" name="" id="menu-hamburguer" />
@@ -35,17 +91,21 @@
               <span class="hamburguer"></span>
             </div>
           </label>
-          
+
           <div class="modal-navbar">
             <div class="navbar-e"></div>
             <div class="navbar-d">
               <ul class="itens-menu">
                 <li>
-                  <img class="logo-reduzida" src="img/logo-reduzida.svg" alt="">
+                  <img
+                    class="logo-reduzida"
+                    src="img/logo-reduzida.svg"
+                    alt=""
+                  />
                 </li>
                 <li>
                   <a class="logar item" href="pages/perfil.html">
-                    <img class="user" src="img/foto-perfil.svg" alt="">
+                    <img class="user" src="img/foto-perfil.svg" alt="" />
                     <span>Maria do Nascimento</span>
                   </a>
                 </li>
@@ -53,13 +113,18 @@
                   <a class="item" href="#">Início</a>
                 </li>
                 <li>
-                  <a class="item" href="pages/modo-daltonismo.html">Modo Daltonismo</a>
-                </li>
-                <li>
                   <a class="item" href="pages/pacotes.html">Pacotes</a>
                 </li>
                 <li>
-                  <a class="item" href="pages/sobre.html">Sobre</a>
+                  <a class="item" href="#">Convites</a>
+                </li>
+                <li>
+                  <a class="item" href="pages/sobre.html">Sobre nós</a>
+                </li>
+                <li>
+                  <a id="modo-daltonismo" class="item" href="#"
+                    >Modo Daltonismo</a
+                  >
                 </li>
                 <li>
                   <a class="item" href="#">Desconectar</a>
@@ -69,11 +134,23 @@
           </div>
         </nav>
         <a href="#">
-          <img class="logo-laçoos" src="img/logo-lacoos.svg" alt="" />
+          <img class="logo-laçoos" src="img/logo-reduzida.svg" alt="" />
         </a>
-        <p>Um vínculo além da<br />visão</p>
+        <div class="container-home">
+          <div class="textos-central">
+            <h1 class="titulo-principal">
+              O melhor<br />site para<br />planejar
+              <span class="css-titulo">seu</span><br /><span class="css-titulo"
+                >casamento</span
+              >
+            </h1>
+            <p>
+              de maneira acessível e com o<br />planejamento que você merece!
+            </p>
+          </div>
+          <div class="botao-home">Começar agora!</div>
+        </div>
         <div class="logo-rede-social">
-          <img src="img/logo-reduzida.svg" alt="" />
           <div class="rede-social">
             <a
               class="link-rede-social"
@@ -93,96 +170,47 @@
         </div>
       </section>
       <section class="caminho-planejamento">
-        <div class="caixa">
-          <img src="img/alinhamento-ideas.svg" alt="" />
-          <div class="grupo-bolinhas">
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-          </div>
-          <img src="img/escolha-plano-ideal.svg" alt="" />
-          <div class="grupo-bolinhas">
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-          </div>
-          <img src="img/casamento-ideal.svg" alt="" />
-        </div>
         <div class="caixa-textos">
-          <div>
-            <a class="h2-link" href="pages/pacotes.html">
-              <h2>Escolha seu plano ideal</h2>
-            </a>
-            <p>
-              Oferecemos dois planos personalizados para tornar o seu casamento
-              ideal uma realidade. Nossa abordagem é feita sob medida, levando
-              em consideração suas preferências individuais. Escolha o plano que
-              melhor se alinha com o seu sonho matrimonia
-            </p>
+          <div class="texto">
+            <div class="conteudo-home">
+              <h2>1.<br />Seu plano ideal</h2>
+              <p>
+                Oferecemos um plano personalizado para tornar o seu casamento
+                ideal uma realidade. Nossa abordagem é feita sob medida, levando
+                em consideração suas preferências individuais.
+              </p>
+              <div class="btn-caminho-planejamento">Saiba mais</div>
+            </div>
+            <img src="img/home/imagem-texto-1.jpg" alt="" />
           </div>
-          <div>
-            <h2>Alinhamento de ideias</h2>
-            <p>
-              Na etapa de alinhamento, estabelecemos contato para moldar, criar
-              e alinhar suas ideias. Juntos, trabalhamos para encontrar o local
-              perfeito que corresponda aos seus desejos e faça o seu casamento
-              ser verdadeiramente especial
-            </p>
+          <div class="texto">
+            <img src="img/home/imagem-texto-2.jpg" alt="" />
+            <div class="conteudo-home">
+              <h2>2.<br />Alinhamento de ideias</h2>
+              <p>
+                Na etapa de alinhamento, estabelecemos contato para moldar,
+                criar e alinhar suas ideias. Juntos, trabalhamos para encontrar
+                o local perfeito que corresponda aos seus desejos e faça o seu
+                casamento ser verdadeiramente especial.
+              </p>
+            </div>
           </div>
-          <div>
-            <h2>Casamento ideal</h2>
-            <p>
-              Chegamos à etapa do casamento, tudo está finalizado. Agora é só
-              desfrutar ao máximo e confiar em nossa expertise para garantir que
-              tudo ocorra de forma perfeita e conforme planejado
-            </p>
+          <div class="texto">
+            <div class="conteudo-home">
+              <h2>3.<br />O dia do SIM!</h2>
+              <p>
+                Chegamos à etapa do casamento, tudo está finalizado. Agora é só
+                desfrutar ao máximo e confiar em nossa expertise para garantir
+                que tudo ocorra de forma perfeita e conforme planejado.
+              </p>
+              <div class="btn-caminho-planejamento">Eu quero!</div>
+            </div>
+            <img src="img/home/imagem-texto-1.jpg" alt="" />
           </div>
         </div>
       </section>
       <section class="modelos-convites">
-        <div class="modelo-de-convite">
-          <div class="grupo-bolinhas">
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-          </div>
-          <h2 class="titulo">Modelo de convites</h2>
-          <div class="grupo-bolinhas">
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-            <div class="bolinha-dourada"></div>
-          </div>
-        </div>
+        <h2 class="titulo">Modelos de convites</h2>
 
         <div class="convites">
           <button class="btn-seta btn-seta-esquerda" id="btn-voltar">
@@ -190,14 +218,14 @@
           </button>
 
           <ul class="lista-convites">
-            <a href="pages/notificacao-logar.html">
+            <a href="pages/login.html">
               <li class="cartao selecionado fundo-1">
-                  <img class="imagem" src="img/convite2.jpg" alt="" />
+                <img class="imagem" src="img/convite2.jpg" alt="" />
               </li>
             </a>
-            <a href="pages/notificacao-logar.html">
+            <a href="pages/login.html">
               <li class="cartao fundo-2">
-                  <img class="imagem" src="img/convite1.jpg" alt="" />
+                <img class="imagem" src="img/convite1.jpg" alt="" />
               </li>
             </a>
           </ul>
@@ -207,7 +235,6 @@
           </button>
         </div>
         <img class="hashiLacoos" src="img/rashiLacoos.jpg" alt="" />
-
       </section>
     </main>
 
@@ -218,21 +245,26 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/carrossel.js"></script>
+    <script src="js/modal-modo-daltonismo.js"></script>
+    <script src="js/menu.js"></script>
 
     <script>
       window.watsonAssistantChatOptions = {
         integrationID: "0cd1e9e9-d7f2-4bdf-80f1-7563dd0ec589", // The ID of this integration.
         region: "us-south", // The region your integration is hosted in.
         serviceInstanceID: "bfa82d89-572b-43af-8ef9-3ae23c5190b8", // The ID of your service instance.
-        onLoad: function(instance) { instance.render(); }
+        onLoad: function (instance) {
+          instance.render();
+        },
       };
-      setTimeout(function(){
-        const t=document.createElement('script');
-        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
         document.head.appendChild(t);
       });
     </script>
-
-    <script src="js/modal-modo-daltonismo.js"></script>
   </body>
 </html>

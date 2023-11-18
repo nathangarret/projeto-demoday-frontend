@@ -1,4 +1,4 @@
-document.querySelector(".titulo-pricipal").addEventListener("click", () => {
+document.getElementById("modo-daltonismo").addEventListener("click", () => {
     document.querySelector(".caixa").classList.add("aparecer")
 })
 

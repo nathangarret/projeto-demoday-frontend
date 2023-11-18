@@ -20,9 +20,8 @@
 }
 
 .container-pacote .titulo-pacotes {
-    font-size: 10rem;
+    font-size: 9rem;
     color: #fff;
-    font-family: 'Dancing Script';
     font-weight: bold;
     text-align: center;
     margin-bottom: 3.5rem;
@@ -50,11 +49,11 @@
 
 .container-pacote .pacotes .pacote .titulo-pacote {
     font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 .container-pacote .pacotes .pacote p {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
