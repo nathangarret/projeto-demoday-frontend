@@ -145,6 +145,70 @@
     visibility: visible;
 }
 
+.footer {
+    background-color: #658955;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cima {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0;
+}
+
+.footer-cima .logo-rede-social {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.footer-cima .logo-rede-social .link-rede-social svg {
+    font-size: 3.7rem;
+}
+
+.footer-cima,
+.footer-cima .link-rede-social {
+    color: #fff;
+}
+
+.footer-cima .footer-informacoes {
+    display: flex;
+    text-align: center;
+    gap: 5rem;
+}
+
+.footer-cima .footer-informacoes .footer-amarelo {
+    color: #C3B107;
+}
+
+.footer-cima .footer-informacoes p {
+    font-size: 2.3rem;
+}
+
+.footer-baixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2.1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -8px 20px;
+}
+
+.footer-baixo .footer-logo-reduzido {
+    height: 3.3rem;
+}
+
+.footer-baixo .footer-p {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
 @media(max-width: 1500px){
     .home .navbar .menu {
         margin-right: 2rem;
