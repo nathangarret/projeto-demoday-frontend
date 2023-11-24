@@ -53,7 +53,7 @@
 .img-detalhes {
     position: absolute;
     right: 0;
-    bottom: -25rem;
+    bottom: -22rem;
 }
 
 .detalhes {
@@ -144,6 +144,10 @@
 
 .btn .p {
     font-size: 36px;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
 }
 
 .sobre-imageslacoos {
