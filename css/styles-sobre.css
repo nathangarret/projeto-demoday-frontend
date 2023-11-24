@@ -1,30 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
+.container {
+    position: relative;
 }
 
 .sobre-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 90vh;
-    background-image: url("../../img/header.png");
+    height: 100vh;
+    background: url(../img/header.png) no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #f0f0f0;
+}
+
+.sobre-home .conteudo-logo {
+    width: 50rem;
 }
 
 .menu {
-    display: flex;
-    justify-content: right;
-    margin-right: 2.5rem;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
 }
 
 .menu img {
@@ -50,16 +45,15 @@
 }
 
 .conteudo p {
-    font-family: "Poppins";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 3.6rem;
     color: #FFFFFF;
 }
 
 .img-detalhes {
-    display: flex;
-    justify-content: right;
-    margin-top: 15rem;
+    position: absolute;
+    right: 0;
+    bottom: -25rem;
 }
 
 .detalhes {
@@ -80,14 +74,12 @@
 
 .conteudo-sobre {
     display: flex;
+    align-items: center;
 }
 
 .conteudo-sobre h1 {
-    width: 337px;
-    height: 83px;
-    font-family: "Dancing Script", cursive;
     color: #658955;
-    font-size: 104px;
+    font-size: 85px;
     margin-right: 5rem;
 }
 
@@ -100,9 +92,7 @@
 
 .conteudo-sobre p {
     width: 523px;
-    height: 252px;
     margin-left: 5rem;
-    font-family: "Poppins";
     font-size: 26px;
 }
 
@@ -120,18 +110,22 @@
 }
 
 .sobre-fontslacoos {
-    width: 100%;
-    ;
-    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.1rem 0;
 }
 
 .conteudo-fonts {
-    width: 100%;
-    ;
-    height: 50vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.conteudo-fonts .buttons {
+    display: flex;
     align-items: center;
+    gap: 10.7rem;
 }
 
 .button button {
@@ -140,29 +134,16 @@
     background-color: #C9B920;
     color: #FFFFFF;
     border-radius: 26px;
-    font-family: 'Berkshire Swash', serif;
     font-size: 44px;
+    border: none;
 }
 
-.title,
-.p {
-    font-family: "Poppins";
-}
-
-.poppins .title {
+.btn .title {
     font-size: 51px;
 }
 
-.poppins .p {
+.btn .p {
     font-size: 36px;
-}
-
-.dancingScript p {
-    width: 259px;
-    height: 122px;
-    font-family: "Dancing Script", cursive;
-    font-size: 77px;
-    color: #658955;
 }
 
 .sobre-imageslacoos {
