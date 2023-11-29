@@ -23,7 +23,20 @@ a {
     height: 100vh;
 }
 
-.notificacao-logar {
+.container-notificacao {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000003f;
+    z-index: 10;
+}
+
+.container-notificacao .notificacao-logar {
     display: flex;
     flex-direction: column;
     align-items: center;
